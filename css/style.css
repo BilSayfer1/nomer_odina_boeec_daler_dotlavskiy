@@ -1,0 +1,105 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.open {
+    right: 0px !important;
+}
+
+center {
+    margin: 40px 0px;
+    h1 {
+        margin-bottom: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        all: unset;
+        border: 1px solid black;
+        border-radius: 14px;
+        cursor: pointer;
+        transition: .5s ease;
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    max-width: 1920px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+
+    .item {
+        width: 100%;   
+        max-width: 364px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        padding-top: 20px;
+
+        .item-img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        .describe-block {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            span {
+                font-weight: 600;
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 600;
+                color: #fff;
+                opacity: 56%;
+                b {
+                    color: white;
+                    opacity: 100% !important;
+                }
+            }
+            .row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .rate {
+                    display: flex;   
+                    align-items: center;
+                    gap: 5px;
+
+                    span {
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            button {
+                all: unset;
+                width: 100%;
+                background-color: white;
+                color: black;
+                border-radius: 14px;
+                text-wrap: nowrap;
+                padding: 10px 0px;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
